@@ -1,7 +1,31 @@
-.body{
-    background: black;
+body{
+    background-color: black;
 }
 
-h1{
+h1 {
     text-align: center;
+    color: white;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=text]{
+border: none;
+border-bottom: 1px white solid;
+}
+
+::-webkit-input-placeholder{
+color: red;
+}
+
+button{
+    text-align: center;
+    color: white;
+    border: none;
+    background: transparent;
+    font-size: 32px;
+    
 }
