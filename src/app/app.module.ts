@@ -12,7 +12,7 @@ import {RouterModule, Routes} from '@angular/router';
 import {NotFoundComponent} from './not-found/not-found.component';
 
 const routes : Routes = [
-  { path: 'welcome', component: WelcomeComponent},
+  { path: '', component: WelcomeComponent},
    { path: 'register', component: RegisterComponent},
     { path: 'encounters', component: EncountersComponent},
      { path: 'report', component: ReportComponent},
