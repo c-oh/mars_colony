@@ -6,7 +6,7 @@ export class Encounter{
         public atype: string,
         public action: string,
 
-    )
+    ) {}
 }
 
 export class Colonist{
@@ -15,7 +15,7 @@ export class Colonist{
         public job: Job,
         public id: number,
         public age: number,
-    )
+    ) {}
 }
 
 export class Job{
@@ -23,7 +23,7 @@ export class Job{
         public name: string,
         public id: number,
         public description: string,
-    )
+    ) {}
 }
 
 export class Alien{
@@ -32,5 +32,5 @@ export class Alien{
         public submitted_by: number,
         public id: number,
         public description:string,
-    )
+    ) {}
 }
