@@ -1,8 +1,8 @@
 <div class="register"> 
   <h1>Register</h1>
   <form>
-    <input type="text" placeholder="Name">
-    <input type="number" placeholder="Age">
+    <input type="text" placeholder="Name" [(ngModel)]="colonist.name" name="name"/>
+    <input type="number" placeholder="Age" [(ngModel)]="colonist.age" name="age">
   </form>
   <form class="occupation" action="#">
       <select name="occupations_selection">
@@ -15,4 +15,6 @@
             </select>
   </form>
   <button type="button" class="checkin">Check In</button>
+
+  {{colonist.name}} - {{colonist.age}}
 </div>
