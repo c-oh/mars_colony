@@ -1,0 +1,40 @@
+body{
+    background-color: black;
+    height: 100vh;
+}
+
+.report-text{
+    line-height: 1px;
+    text-align: center;
+    color: white;
+}
+
+button{
+    text-align: center;
+    color: white;
+    border: none;
+    background: transparent;
+    font-size: 2rem;
+    width: 97vw;
+}
+
+textarea{
+    color: red;
+    width: 97vw;
+}
+select{
+    color: red;
+    background: transparent;
+    border: none;
+    font-size: 1rem;
+    width: 100vw;
+}
+
+.alientype{
+border: none;
+border-bottom: 1px white solid;
+background:transparent;
+margin-bottom: 20px;
+height: 35px;
+font-size: 1rem;
+}
