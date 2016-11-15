@@ -19,9 +19,16 @@ button{
 }
 
 textarea{
-    color: red;
+    color:black;
     width: 97vw;
+    font-size: 1rem;
 }
+
+::-webkit-input-placeholder{
+color: red;
+font-size: 1rem;
+}
+
 select{
     color: red;
     background: transparent;
