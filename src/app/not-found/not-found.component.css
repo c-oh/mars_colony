@@ -1,0 +1,12 @@
+body{
+    background: black;
+    height: 100vh;
+}
+
+.notfound-text{
+text-align: center;
+}
+
+p{
+    font-size: 1rem;
+}

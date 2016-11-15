@@ -1,4 +1,13 @@
+.body{
+    height: 100vh;
+    background: black;
+}
 
+.welcome-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 
 h1{
     text-transform: uppercase;
@@ -11,6 +20,3 @@ h2{
     font-size: 1.4rem;
 }
 
-button{
-    width: 97vw;
-}
