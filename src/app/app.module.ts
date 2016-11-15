@@ -8,7 +8,16 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { RegisterComponent } from './register/register.component';
 import { EncountersComponent } from './encounters/encounters.component';
 import { ReportComponent } from './report/report.component';
+import {RouterModule, Routes} from '@angular/router';
+import {NotFoundComponent} from './not-found/not-found.component';
 
+const routes : Routes = [
+  { path: 'welcome', component: WelcomeComponent},
+   { path: 'register', component: RegisterComponent},
+    { path: 'encounters', component: EncountersComponent},
+     { path: 'report', component: ReportComponent},
+     {path: '**', component: NotFoundComponent},
+];
 
 @NgModule({
   declarations: [
@@ -17,11 +26,14 @@ import { ReportComponent } from './report/report.component';
     RegisterComponent,
     EncountersComponent,
     ReportComponent,
+    NotFoundComponent,
+
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule, 
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]
