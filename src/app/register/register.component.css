@@ -1,5 +1,6 @@
 body{
     background-color: black;
+    height: 100vh;
 }
 
 h1 {
@@ -12,11 +13,17 @@ form {
     flex-direction: column;
 }
 
-input[type=text], .occupation_options{
+input[type=text], input[type=number], .occupation_options{
 border: none;
 border-bottom: 1px white solid;
 background:transparent;
-margin-bottom: 25px;
+margin-bottom: 20px;
+height: 35px;
+color: white;
+}
+
+.occupations{
+    width: 100%;
 }
 
 ::-webkit-input-placeholder{
