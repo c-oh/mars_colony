@@ -1,0 +1,21 @@
+.body{
+    height: 100vh;
+}
+.encounter-text{
+    line-height: 1px;
+    text-align: center;
+}
+
+.encounter-btn{
+    height: 20%;
+    background-color: black;
+}
+
+button{
+    width: 100vw;
+    text-align: center;
+    border:none;
+    background: transparent;
+    color: white;
+    font-size: 2rem;
+}
