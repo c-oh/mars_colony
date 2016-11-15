@@ -4,6 +4,7 @@
 .encounter-text{
     line-height: 1px;
     text-align: center;
+    color: white;
 }
 
 .encounter-btn{
@@ -18,4 +19,13 @@ button{
     background: transparent;
     color: white;
     font-size: 2rem;
+}
+h1{
+    font-size: 2rem;
+
+}
+
+p{
+    font-size: 1rem;
+    
 }

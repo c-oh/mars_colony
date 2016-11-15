@@ -4,10 +4,15 @@
 background-size: contain;
 }
 
+
 .welcome-page{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+
+.report-text{
+    color: white;
 }
 
 h1{
