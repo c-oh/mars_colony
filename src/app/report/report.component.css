@@ -1,4 +1,4 @@
-body{
+.report{
     background-color: black;
     height: 100vh;
 }
@@ -7,6 +7,15 @@ body{
     line-height: 1px;
     text-align: center;
     color: white;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+p{
+    line-height: 10px;
+    font-size:1rem;
 }
 
 button{

@@ -1,4 +1,4 @@
-body{
+.notFound{
     background: black;
     height: 100vh;
 }
@@ -8,6 +8,9 @@ text-align: center;
 color: white;
 }
 
+h1{
+    font-size:2rem;
+}
 p{
     font-size: 1rem;
 }

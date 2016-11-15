@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Colonist } from '../models';
 
 @Component({
   selector: 'app-register',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegisterComponent implements OnInit {
 
-  constructor() { }
+colonist: Colonist;
+
+  constructor() {
+    this.colonist = new Colonist ('',null,null,null)
+   }
 
   ngOnInit() {
   }
 
 }
+
