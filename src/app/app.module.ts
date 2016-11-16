@@ -10,6 +10,7 @@ import { EncountersComponent } from './encounters/encounters.component';
 import { ReportComponent } from './report/report.component';
 import {RouterModule, Routes} from '@angular/router';
 import {NotFoundComponent} from './not-found/not-found.component';
+import {ReactiveFormsModule} from '@angular/forms';
 
 const routes : Routes = [
   { path: '', component: WelcomeComponent},
@@ -33,7 +34,8 @@ const routes : Routes = [
     BrowserModule,
     FormsModule,
     HttpModule, 
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+  ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
