@@ -1,12 +1,12 @@
 <div class="register"> 
   <h1>Register</h1>
   <div class= "register-form-section">
-  <form #registerForm="ngForm" class="register-form" (ngSubmit)="onSubmit()">
-    <input type="text" placeholder="Name" [(ngModel)]="colonist.name" name="name" class= ""/>
-    <input type="number" placeholder="Age" [(ngModel)]="colonist.age" name="age">
+  <form [formGroup]="registerForm" class="register-form" (ngSubmit)="onSubmit($event)">
+    <input type="text" placeholder="Name" formControlName="name"/>
+    <input type="number" placeholder="Age" formControlName="name">
   </form>
   <form class="occupation" action="#">
-      <select [(ngModel)]="colonist.job_id" name="job_id">
+      <select formControlName="job_id" name="job_id">
         <option [value]= "NO_JOB_SELECTED"> Occupation </option>
         <option *ngFor="let job of marsJobs" [value]="job.id" >{{job.name}} </option>
             </select>

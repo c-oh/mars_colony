@@ -29,6 +29,11 @@ NO_JOB_SELECTED = '(none)';
   ngOnInit() {
   }
 
+  onSubmit(event, registerForm){
+    event.preventDefault();
+    registerForm.form.controls.name.invalid=true;
+  }
+
 get jobSelected (){
   return this.colonist.job_id !== this.NO_JOB_SELECTED;
 }
