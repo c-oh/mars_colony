@@ -1,8 +1,15 @@
 .app-container{
-background-color: black;
+background-color: red;
 }
 
-a{
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a{
+    font: 1rem 'robotothin', sans-serif;
     color: white;
     text-decoration: none;
 }
