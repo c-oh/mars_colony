@@ -1,10 +1,15 @@
-<div class="app-container">
-  <nav>
-    <a routerLink="" routerLinkActive="active">Welcome</a>
+<div class = "head">
+  <button class="hamburger">&#9776;</button>
+  <button class="cross">&#735;</button>
+</div>
+
+<div class="menu">
+  <ul>
+  <a routerLink="" routerLinkActive="active">Welcome</a>
     <a routerLink="/register" routerLinkActive="active">Register</a>
     <a routerLink="/encounters" routerLinkActive="active">Encounters</a>
     <a routerLink="/report" routerLinkActive="active">Report</a>
     <a routerLink="/notFound" routerLinkActive="active">Not Found</a>
-  </nav>
+  </ul>
   <router-outlet></router-outlet>
-</div>
+</div> 

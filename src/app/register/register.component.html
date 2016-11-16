@@ -1,8 +1,8 @@
 <div class="register"> 
   <h1>Register</h1>
   <div class= "register-form-section">
-  <form>
-    <input type="text" placeholder="Name" [(ngModel)]="colonist.name" name="name"/>
+  <form #registerForm="ngForm" class="register-form" (ngSubmit)="onSubmit()">
+    <input type="text" placeholder="Name" [(ngModel)]="colonist.name" name="name" class= ""/>
     <input type="number" placeholder="Age" [(ngModel)]="colonist.age" name="age">
   </form>
   <form class="occupation" action="#">
@@ -12,6 +12,6 @@
             </select>
   </form>
   </div>
-  <button [disabled]="!jobSelected" class="register-btn">Check In</button>
+  <button [disabled]="!jobSelected || register.Form.invalid" type="" >Check In</button>
 
 </div>

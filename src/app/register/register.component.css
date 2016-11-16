@@ -8,6 +8,7 @@ h1 {
     color: white;
     font: 1.5rem 'robotolight', sans-serif;
     text-decoration: uppercase;
+    padding-top: 30px;
 }
 
 form {
@@ -38,7 +39,7 @@ color: red;
 font: 1rem 'robotothin', sans-serif;
 }
 
-.register-btn{
+.button{
     text-align: center;
     color: white;
     border: none;
