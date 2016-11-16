@@ -29,8 +29,8 @@ NO_JOB_SELECTED = '(none)';
   ngOnInit() {
   }
 
-get occupationSelected (){
-  return this.colonist.job_id === this.NO_JOB_SELECTED;
+get jobSelected (){
+  return this.colonist.job_id !== this.NO_JOB_SELECTED;
 }
 }
 

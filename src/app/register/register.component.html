@@ -10,7 +10,7 @@
         <option *ngFor="let job of marsJobs" [value]="job.id" >{{job.name}} </option>
             </select>
   </form>
-  <button type="button" class="register-btn">Check In</button>
+  <button [disabled]="!jobSelected" class="register-btn">Check In</button>
 
   {{colonist.name}} | {{colonist.age}} | {{colonist.job_id}}
 </div>
