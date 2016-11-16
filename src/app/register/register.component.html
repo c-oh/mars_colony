@@ -4,14 +4,12 @@
   <form [formGroup]="registerForm" class="register-form" (ngSubmit)="onSubmit($event)">
     <input type="text" placeholder="Name" formControlName="name"/>
     <input type="number" placeholder="Age" formControlName="name">
-  </form>
-  <form class="occupation" action="#">
-      <select formControlName="job_id" name="job_id">
+      <select formControlName="job_id" name="job_id" class= "job_selection">
         <option [value]= "NO_JOB_SELECTED"> Occupation </option>
         <option *ngFor="let job of marsJobs" [value]="job.id" >{{job.name}} </option>
             </select>
   </form>
   </div>
-  <button [disabled]="!jobSelected || register.Form.invalid" type="" >Check In</button>
+  <button>Check In</button>
 
 </div>

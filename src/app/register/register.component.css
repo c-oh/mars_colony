@@ -16,7 +16,7 @@ form {
     flex-direction: column;
 }
 
-input[type=text], input[type=number], .occupation{
+input[type=text], input[type=number], select{
 border: none;
 border-bottom: 1px white solid;
 background:transparent;
@@ -24,14 +24,18 @@ margin-bottom: 20px;
 height: 35px;
 font: 1rem 'robotothin', sans-serif;
 color: white;
+
 }
 
-select{
+
+
+.NO_JOB_SELECTED{
     color: red;
     background: transparent;
     border: none;
     font: 1rem 'robotothin', sans-serif;
     width: 100vw;
+    -webkit-appearance: none;
 }
 
 ::-webkit-input-placeholder{
@@ -39,7 +43,8 @@ color: red;
 font: 1rem 'robotothin', sans-serif;
 }
 
-.button{
+button{
+    padding-top: 20px;
     text-align: center;
     color: white;
     border: none;

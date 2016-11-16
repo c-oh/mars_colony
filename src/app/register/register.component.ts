@@ -1,12 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import {NewColonist, Job } from '../models';
 import JobsService from '../services/jobs.service'
-import {FormGroup, FormControl, FormBuilder, Validators, AbstractControl } from '@angular/forms';
+import {FormGroup, FormControl, FormBuilder, Validators, ValidatorFn, AbstractControl } from '@angular/forms';
 
-const notNone = (value) => {
-return value === '(none)' ? false : true;
 
-}
+
 
 @Component({
   selector: 'app-register',
@@ -24,8 +22,6 @@ NO_JOB_SELECTED = '(none)';
 
 
   constructor(jobService: JobsService) {
-    this.colonist = new NewColonist(null,null,this.NO_JOB_SELECTED);
-
     jobService.getJobs().subscribe((jobs) => {
       this.marsJobs = jobs;
     }, (err)=> {
@@ -33,16 +29,23 @@ NO_JOB_SELECTED = '(none)';
     });
    }
 
-  ngOnInit() {
-  }
-
-  onSubmit(event, registerForm){
-    event.preventDefault();
-    registerForm.form.controls.name.invalid=true;
-  }
-
-get jobSelected (){
-  return this.colonist.job_id !== this.NO_JOB_SELECTED;
+cantBe(value:string):ValidatorFn{
+  return(control:AbstractControl):{[key: string]: any} => {
+    return value === '(none)'? {'cant be none' :{value}} :null;
+  };
 }
+  ngOnInit() {
+
+    this.registerForm =new FormGroup({
+      name: new FormControl('', [Validators.required, Validators.minLength(2)]),
+      age: new FormControl('', [Validators.required, Validators.maxLength(3)]),
+      job_id: new FormControl('none', [cantBe(this.NO_JOB_SELECTED)]),
+    })
+  }
+
+  onSubmit(event){
+    event.preventDefault();
+  }
+
 }
 
