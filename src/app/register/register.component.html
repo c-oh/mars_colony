@@ -1,15 +1,17 @@
 <div class="register"> 
   <h1>Register</h1>
+  <div class= "register-form-section">
   <form>
     <input type="text" placeholder="Name" [(ngModel)]="colonist.name" name="name"/>
     <input type="number" placeholder="Age" [(ngModel)]="colonist.age" name="age">
   </form>
   <form class="occupation" action="#">
       <select [(ngModel)]="colonist.job_id" name="job_id">
-        <option [value]= "NO_JOB_SELECTED"> Select a Job</option>
+        <option [value]= "NO_JOB_SELECTED"> Occupation </option>
         <option *ngFor="let job of marsJobs" [value]="job.id" >{{job.name}} </option>
             </select>
   </form>
+  </div>
   <button [disabled]="!jobSelected" class="register-btn">Check In</button>
 
   {{colonist.name}} | {{colonist.age}} | {{colonist.job_id}}
