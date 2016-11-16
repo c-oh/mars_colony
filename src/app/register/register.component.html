@@ -6,6 +6,7 @@
   </form>
   <form class="occupation" action="#">
       <select [(ngModel)]="colonist.job_id" name="job_id">
+        <option [value]= "NO_JOB_SELECTED"> Select a Job</option>
         <option *ngFor="let job of marsJobs" [value]="job.id" >{{job.name}} </option>
             </select>
   </form>
