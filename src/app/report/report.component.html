@@ -9,6 +9,7 @@
   
  <form [formGroup]="reportForm">
    <select formControlName="atype">
+     <option [value]="NO_ALIEN_SELECTED"> Alien Type </option>
      <option *ngFor="let alien of aliensList" [value]="alien.type"> {{alien.type}}</option>
    </select>
 

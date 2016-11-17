@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {NewColonist, Job } from '../models';
 import JobsService from '../services/jobs.service'
 import {FormGroup, FormControl, FormBuilder, Validators, ValidatorFn, AbstractControl } from '@angular/forms';
+import {cantBe} from '../shared/validators';
 
 @Component({
   selector: 'app-register',
@@ -26,13 +27,12 @@ NO_JOB_SELECTED = '(none)';
     });
    }
 
-
   ngOnInit() {
 
     this.registerForm = new FormGroup({
       name: new FormControl('', [Validators.required, Validators.minLength(2)]),
       age: new FormControl('', [Validators.required, Validators.maxLength(3)]),
-      job_id: new FormControl('(none)', [this.cantBe(this.NO_JOB_SELECTED)]),
+      job_id: new FormControl('(none)', [cantBe(this.NO_JOB_SELECTED)]),
     });
   }
 
