@@ -1,7 +1,3 @@
-<div class = "head">
-  <button class="hamburger" (ngClick)="onClick($event, openMenu)" >&#9776;</button>
-  <button class="cross">&#735;</button>
-</div>
 
 <div class="menu">
   <ul>
@@ -13,3 +9,5 @@
   </ul>
   <router-outlet></router-outlet>
 </div> 
+
+<div ng-class='{ show: visible, left: alignment === \"left\" }' ng-transclude></div>

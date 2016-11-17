@@ -27,9 +27,7 @@ color: white;
 
 }
 
-
-
-.NO_JOB_SELECTED{
+option{
     color: red;
     background: transparent;
     border: none;
