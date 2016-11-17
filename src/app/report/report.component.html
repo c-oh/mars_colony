@@ -5,25 +5,10 @@
   </div>
 
 <div class = "report-select">
- <form>
-    <select name="alientype-selection">
- 					<option value="">Select an alien type</option>
-  					<option value= "#">Ectomorph</option>
-					<option value= "#">Endomorph</option>
-  					<option value="#">Green Man</option>
-  					<option value="#">Grey Man</option>
-  					<option value="#">Big Nose Flat Head</option>
-	          <option value="#">Octospider</option>
-            </select>
-  </form> -->
+ <form [formGroup]="reportForm">
+   <select formControlName="atype"></select>
+ 			<textarea rows="4" cols="50" placeholder="Action taken"></textarea>	
+<button type="button">Submit Report</button>
+  </form>
 </div>
 
-<div class="report-textbox">
-<textarea rows="4" cols="50" placeholder="Action taken">
-</textarea>
-</div>
-
-  <div class="report-btn">
-    <button type="button" class="report">Submit Report</button>
-  </div>
-</div>
