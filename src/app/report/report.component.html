@@ -5,8 +5,13 @@
   </div>
 
 <div class = "report-select">
+
+  
  <form [formGroup]="reportForm">
-   <select formControlName="atype"></select>
+   <select formControlName="atype">
+     <option *ngFor="let alien of aliensList" [value]="alien.type"> {{alien.atype}}</option>
+   </select>
+
  			<textarea rows="4" cols="50" placeholder="Action taken"></textarea>	
 <button type="button">Submit Report</button>
   </form>
