@@ -35,4 +35,19 @@ reportForm: FormGroup;
     })
   }
 
+private getDate(){
+  const date = new Date();
+return `${date.getFullYear()}-${date.getMonth() +1} -${date.getDate()}`
+}
+
+onSubmit(event){
+  event.preventDefault();
+  const date = this.getDate();
+  const atype = this.reportForm.get('atype').value;
+  const action = this.reportForm.get('action').value;
+
+
+
+  const encounter = new NewEncounter();
+}
 }

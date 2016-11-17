@@ -7,7 +7,7 @@
 <div class = "report-select">
 
   
- <form [formGroup]="reportForm">
+ <form [formGroup]="reportForm" (ngSubmit)="onSubmit($event)">
    <select formControlName="atype">
      <option [value]="NO_ALIEN_SELECTED"> Alien Type </option>
      <option *ngFor="let alien of aliensList" [value]="alien.type"> {{alien.type}}</option>
