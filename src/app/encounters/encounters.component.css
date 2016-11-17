@@ -1,5 +1,6 @@
 .encounter{
     height: 100vh;
+    background: black;
 }
 .encounter-text{
     text-align: center;
@@ -8,10 +9,15 @@
 
 .encounter-btn{
     height: 20%;
-    background-color: black;
+}
+
+.information{
+    background: #D3D3D3;
+    height: 75%;
 }
 
 button{
+    padding: 20px;
     width: 100vw;
     text-align: center;
     border:none;

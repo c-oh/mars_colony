@@ -1,6 +1,5 @@
-export class Encounter{
+export class NewEncounter{
     constructor(
-        public id: number,
         public date: string,
         public colonist_id: number,
         public atype: string,
@@ -9,12 +8,12 @@ export class Encounter{
     ) {}
 }
 
-interface Encounter{
-    name:string;
-    date: string;
-    colonist_id: number;
-    atype: number;
-    action: string;
+export interface Encounter{
+    colonist_id: string,
+    date:string,
+    atype:string,
+    action: string,
+    id: number,
 }
 
 export class NewColonist{
