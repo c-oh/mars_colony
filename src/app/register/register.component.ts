@@ -26,11 +26,7 @@ NO_JOB_SELECTED = '(none)';
     });
    }
 
-cantBe(value:string):ValidatorFn{
-  return(control:AbstractControl):{[key: string]: any} => {
-    return control.value === value ? {'cant be none' :{value}} :null;
-  };
-}
+
   ngOnInit() {
 
     this.registerForm = new FormGroup({

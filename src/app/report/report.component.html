@@ -9,7 +9,7 @@
   
  <form [formGroup]="reportForm">
    <select formControlName="atype">
-     <option *ngFor="let alien of aliensList" [value]="alien.type"> {{alien.atype}}</option>
+     <option *ngFor="let alien of aliensList" [value]="alien.type"> {{alien.type}}</option>
    </select>
 
  			<textarea rows="4" cols="50" placeholder="Action taken"></textarea>	
