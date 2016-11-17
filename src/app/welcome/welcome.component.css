@@ -36,7 +36,7 @@ h2{
 	border: 10px solid #f7f14c;
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
-	border-radius: 30px;
+	border-radius: 40px;
 	background-color: #716f42;
 	position: absolute;
     -webkit-animation: pulsate 1s ease-out;
@@ -50,8 +50,8 @@ h2{
 	-webkit-border-radius: 60px;
 	-moz-border-radius: 60px;
 	border-radius: 60px;
-	height: 90px;
-	width: 90px;
+	height: 45px;
+	width: 45px;
 	-webkit-animation: pulse 3s ease-out;
 	-moz-animation: pulse 3s ease-out;
     animation: pulse 3s ease-out;

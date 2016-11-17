@@ -11,7 +11,7 @@ export default class JobsService {
 
 JOBS_JSON = 'https://red-wdp-api.herokuapp.com/api/mars/jobs';
   
-  constructor(private http: Http) { }
+  constructor(private http: Http) { };
 
   getJobs(): Observable<Job[]> {
   return this.http.get(this.JOBS_JSON)
