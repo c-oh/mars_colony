@@ -9,6 +9,14 @@ export class Encounter{
     ) {}
 }
 
+interface Encounter{
+    name:string;
+    date: string;
+    colonist_id: number;
+    atype: number;
+    action: string;
+}
+
 export class NewColonist{
     constructor(
         public name: string,

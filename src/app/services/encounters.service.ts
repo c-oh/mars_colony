@@ -9,7 +9,7 @@ import {Encounter} from '../models';
 @Injectable()
 export default class EncountersService {
 
-ENCOUNTERS_JSON = 'https://red-wdp-api.herokuapp.com/api/mars/encounters';
+ENCOUNTERS_JSON = '';
   
   constructor(private http: Http) { };
 
@@ -17,4 +17,8 @@ ENCOUNTERS_JSON = 'https://red-wdp-api.herokuapp.com/api/mars/encounters';
   return this.http.get(this.ENCOUNTERS_JSON)
     .map((res: Response) => res.json().encounters);
   }
+
+submitEncounter(encounter:Encounter): Encounter{
+
+}
 }
