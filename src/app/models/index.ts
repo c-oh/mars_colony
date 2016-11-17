@@ -24,7 +24,7 @@ export class NewColonist{
     ) {}
 }
 
-interface Colonist{
+export interface Colonist{
     name:string;
     id: number;
     age: number;
@@ -39,11 +39,9 @@ export class Job{
     ) {}
 }
 
-export class Alien{
-    constructor(
-        public type: string,
-        public submitted_by: number,
-        public id: number,
-        public description:string,
-    ) {}
+export interface Alien{
+        type: string,
+        submitted_by: number,
+        id: number,
+        description:string,
 }
