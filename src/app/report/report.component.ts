@@ -4,6 +4,7 @@ import EncountersService from '../services/encounters.service';
 import { FormGroup, FormControl, FormBuilder, Validators, ValidatorFn, AbstractControl } from '@angular/forms';
 import{Alien} from '../models';
 import {cantBe} from '../shared/validators';
+import {Encounter, NewEncounter} from '../models';
 
 @Component({
   selector: 'app-report',
@@ -45,9 +46,14 @@ onSubmit(event){
   const date = this.getDate();
   const atype = this.reportForm.get('atype').value;
   const action = this.reportForm.get('action').value;
+  const encounter = new NewEncounter(date, atype, action, '4');
 
-
-
-  const encounter = new NewEncounter();
+  this.encountersService.submitEncounter(encounter)
+  .subscribe((enc) => {
+    console.log('got encounter:',enc);
+  }, (err) => {
+    console.log('there was an error:', err);
+  });
+  
 }
 }
