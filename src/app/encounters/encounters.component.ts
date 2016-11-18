@@ -4,12 +4,11 @@ import EncounterService from '../services/encounters.service';
 
 @Component({
   selector: 'app-encounter',
-  templateUrl: './encounter.component.html',
-  styleUrls: ['./encounter.component.css'],
+  templateUrl: './encounters.component.html',
+  styleUrls: ['./encounters.component.css'],
   providers: [EncounterService]
 })
-
-export class EncounterComponent implements OnInit {
+export class EncountersComponent implements OnInit {
   encounterList: Encounter[];
   constructor(encounterService: EncounterService) {
     encounterService.getEncounters().subscribe((encounters) => {
