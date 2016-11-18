@@ -1,20 +1,20 @@
 <div class="encounter">
-  <div class= "encounter-text">
-  <h1>Recent Encoutners</h1>
-  <p>See an Alien? Report it!</p>
-  </div>
+    <h1 class="heading">Recent Encoutners
+    <span>See an Alien? Report it!</span>
+    </h1>
 
-<div class= "information">
-  <ul class= "information-list">
-<li class="information-detail" *ngFor="let encounter of encountersList">
-<div> {{encounter.date}} - {{encounter.atype}} </div>
-<p>{{encounter.action}}</p>
 
-</li>
-  </ul>
-</div>
+  
+   <div class= "encounter-list">
+ <ul>
+  <li *ngFor="let encounter of encounterList">
+    <div>{{encounter.date}} - {{encounter.atype}}</div>
+    <p>{{encounter.action}}</p>
+  </li>
+</ul>
+    </div> 
 
-<div>
-  <button type="button" class="report">Report Encounter</button>
-
+  <footer>
+    <button type="button" class="report">Report Encounter</button>
+  </footer>
 </div>

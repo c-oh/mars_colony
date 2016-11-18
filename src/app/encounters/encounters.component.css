@@ -1,36 +1,25 @@
 .encounter{
     height: 100vh;
-    background: black;
+    display: flex;
+    flex-direction: column;
 }
-.encounter-text{
-    text-align: center;
-    color: white;
-}
-
-.encounter-btn{
-    height: 20%;
+.encounter-list{
+    height: 75vh;
 }
 
-.information{
-    background: #D3D3D3;
-    height: 75%;
+
+.encounter-list{
+    flex:1;
+    overflow: scroll;
+    padding: 0 1rem 2rem;
 }
 
 button{
     padding: 20px;
-    width: 100vw;
+    width: 100%;
     text-align: center;
     border:none;
-    background: transparent;
+    background: black;
     color: white;
     font-size: 2rem;
-}
-h1{
-    font-size: 2rem;
-
-}
-
-p{
-    font-size: 1rem;
-    
 }

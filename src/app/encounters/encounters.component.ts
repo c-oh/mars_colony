@@ -9,8 +9,10 @@ import EncounterService from '../services/encounters.service';
   providers: [EncounterService]
 })
 export class EncountersComponent implements OnInit {
+
   encounterList: Encounter[];
-  constructor(encounterService: EncounterService) {
+
+  constructor(private encounterService: EncounterService) {
     encounterService.getEncounters().subscribe((encounters) => {
       this.encounterList = encounters;
       console.log(encounters);
