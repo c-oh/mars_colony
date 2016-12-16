@@ -1,5 +1,5 @@
 
-![alt tag](http://imgur.com/c41622ea-406a-460e-afee-84769c57edd0.png)
+![alt tag](http://i.imgur.com/AtV8Nfl.png)
 
 # MarsColony
 This project was generated with Angular2. As one of my first Angular2 projects, I was able to learn how to display user created contentent through API's provided, and understand the logic/reasoning of the frameworks.
