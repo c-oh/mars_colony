@@ -6,6 +6,7 @@
 .report-text{
     text-align: center;
     color: white;
+    font: 1.5rem 'robotothin', sans-serif;
 }
 
 h1{
@@ -14,7 +15,7 @@ h1{
 
 p{
 
-    font-size:1rem;
+font: 1em 'robotothin', sans-serif;
 }
 
 button{
@@ -22,14 +23,14 @@ button{
     color: white;
     border: none;
     background: transparent;
-    font-size: 2rem;
+font: 1.5rem 'robotothin', sans-serif;
     width: 100vw;
 }
 
 textarea{
     color:black;
     width: 97vw;
-    font-size: 1rem;
+  font: 1.5rem 'robotothin', sans-serif;
 }
 
 ::-webkit-input-placeholder{
